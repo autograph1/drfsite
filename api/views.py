@@ -6,11 +6,6 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 
-def get_tasks(request):
-    tasks = Task.objects.all()
-    data = decode(tasks)
-    return JsonResponse(data,safe=False)
-
 
 def decode(tasks):
     result = []
@@ -24,16 +19,20 @@ def decode(tasks):
     })
     return result
 @csrf_exempt
-def post_task(request):
-    if request.method == "POST":
+def tasks(request):
+    if request.method == "GET":
+        tasks = Task.objects.all()
+        data = decode(tasks)
+        return JsonResponse(data,safe=False)
+    elif request.method == "POST":
         data = json.loads(request.body)
         Task.objects.create(
             title = data["title"],
             priority = data["priority"]
         )
         return JsonResponse({"status":"ok"})
-        
     else:
-        return(JsonResponse({"error": "Invalid method"}))
+        return JsonResponse({"error": "Invalid method"}, status=405)
+
 
 
