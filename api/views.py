@@ -4,9 +4,6 @@ from django.http import JsonResponse
 import json
 from django.views.decorators.csrf import csrf_exempt
 
-
-
-
 def decode(tasks):
     result = []
 
@@ -33,6 +30,22 @@ def tasks(request):
         return JsonResponse({"status":"ok"})
     else:
         return JsonResponse({"error": "Invalid method"}, status=405)
+    
+
+def task_detail(request,id):
+
+    try:
+        task = Task.objects.get(id=id)
+    except Task.DoesNotExist:   
+        return JsonResponse({"error" : "Not found"}, status = 404)
+    data = {
+        "id" : task.id, 
+        'title' : task.title,
+        "created_at" : task.created_at,
+        "priority" : task.priority,
+        "completed" : task.completed,
+        }
+ 
 
 
 
