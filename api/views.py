@@ -50,6 +50,10 @@ def task_detail(request,id):
     elif request.method == "DELETE":
         task.delete()
         return JsonResponse({"status" : "deleted"})
+    elif request.method == "PUT":
+        data = json.loads(request.body)
+        task.title =data.title
+      
     else:
         return JsonResponse({"error" : "Invalid method"}, status = 405)
  
