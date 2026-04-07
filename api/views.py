@@ -31,21 +31,29 @@ def tasks(request):
     else:
         return JsonResponse({"error": "Invalid method"}, status=405)
     
-
+@csrf_exempt
 def task_detail(request,id):
 
     try:
         task = Task.objects.get(id=id)
     except Task.DoesNotExist:   
         return JsonResponse({"error" : "Not found"}, status = 404)
-    data = {
+    if request.method == "GET":
+        data = {
         "id" : task.id, 
         'title' : task.title,
         "created_at" : task.created_at,
         "priority" : task.priority,
         "completed" : task.completed,
         }
+        return JsonResponse(data)
+    elif request.method == "DELETE":
+        task.delete()
+        return JsonResponse({"status" : "deleted"})
+    else:
+        return JsonResponse({"error" : "Invalid method"}, status = 405)
  
+
 
 
 
