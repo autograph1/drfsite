@@ -52,8 +52,11 @@ def task_detail(request,id):
         return JsonResponse({"status" : "deleted"})
     elif request.method == "PUT":
         data = json.loads(request.body)
-        task.title =data.title
-      
+        task.title = data.get("title", task.title)
+        task.priority = data.get("priority", task.priority)
+        task.completed = data.get("completed", task.completed)
+        task.save()
+        return JsonResponse({"status": "updated"}) 
     else:
         return JsonResponse({"error" : "Invalid method"}, status = 405)
  
