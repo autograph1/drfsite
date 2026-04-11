@@ -23,6 +23,7 @@ def tasks(request):
         return JsonResponse(data,safe=False)
     elif request.method == "POST":
         data = json.loads(request.body)
+        serializer = TaskSerializer(data=data)
         Task.objects.create(
             title = data["title"],
             priority = data["priority"]
