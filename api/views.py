@@ -4,6 +4,8 @@ from django.http import JsonResponse
 import json
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import TaskSerializer
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 @csrf_exempt
 def tasks(request):
@@ -51,6 +53,18 @@ def task_detail(request,id):
         return JsonResponse({"status": "updated"}) 
     else:
         return JsonResponse({"error" : "Invalid method"}, status = 405)
+    
+@csrf_exempt
+class TaskListView(APIView):
+    def get(self,request):
+        tasks = Task.objects.all()
+        serializer = TaskSerializer(tasks,many=True) 
+        return Response(serializer.data,status=200)
+    
+
+    def post(self,request):
+        task = TaskSerializer(request.data) 
+        return
  
 
 
