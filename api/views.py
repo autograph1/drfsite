@@ -3,6 +3,7 @@ from .models import Task
 from django.http import JsonResponse
 import json
 from django.views.decorators.csrf import csrf_exempt
+from .serializers import TaskSerializer
 
 def decode(tasks):
     result = []
@@ -23,14 +24,14 @@ def tasks(request):
         return JsonResponse(data,safe=False)
     elif request.method == "POST":
         data = json.loads(request.body)
-        serializer = TaskSerializer(data=data)
-        Task.objects.create(
-            title = data["title"],
-            priority = data["priority"]
-        )
-        return JsonResponse({"status":"ok"})
-    else:
-        return JsonResponse({"error": "Invalid method"}, status=405)
+        serializer = TaskSerializer(data=data) 
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status = 200)
+        else:
+            return JsonResponse(serializer.errors, status = 400)
+
+
     
 @csrf_exempt
 def task_detail(request,id):
