@@ -1,10 +1,9 @@
 from .models import Task
-from django.views.decorators.csrf import csrf_exempt
 from .serializers import TaskSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-@csrf_exempt
+
 class TaskListView(APIView):
     def get(self,request):
         tasks = Task.objects.all()
@@ -21,14 +20,12 @@ class TaskListView(APIView):
 
 
 
-@csrf_exempt
-
 class TaskDetailView(APIView):
     def get(self,request,id):
         try:
             task = Task.objects.get(id=id)
         except Task.DoesNotExis:
-            return Response("error":"not found",status=404)
+            return Response({"error":"not found"},status=404)
         serializer = TaskSerializer(task)
         return Response(serializer.data)
     
