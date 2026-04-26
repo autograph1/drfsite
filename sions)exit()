@@ -1,0 +1,227 @@
+[33mcommit b9e01092b699a1bb2a2e50e18416905ace3ebfaa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Sun Apr 26 13:14:10 2026 +0300
+
+    made jwt
+
+[33mcommit a4c71f46bec3a01ce06597aae800c92e392876ce[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Thu Apr 23 23:12:02 2026 +0300
+
+    asdf
+
+[33mcommit f31740d610a497c9539ec008d003bf5e8e57f53a[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Sun Apr 19 20:43:44 2026 +0300
+
+    permissions
+
+[33mcommit 4cb52a13ec7e97e62a1caf7a6a9270b26d331f55[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Sat Apr 18 20:37:38 2026 +0300
+
+    r
+
+[33mcommit cfe196f065cf18d7f5e0a47e2dd31889895b85e2[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Fri Apr 17 20:31:52 2026 +0300
+
+    auth
+
+[33mcommit 4f1d91bbdfca6aec7587c65662eb37f71e575ff7[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Fri Apr 17 19:28:15 2026 +0300
+
+    next level
+
+[33mcommit 36351585ef0b9489143f7e2a242a00f3eedae4b7[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Thu Apr 16 22:34:17 2026 +0300
+
+    page
+
+[33mcommit 46228b54c115d49fba643d5fbc9cfad65d6916da[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Thu Apr 16 00:09:10 2026 +0300
+
+    filter
+
+[33mcommit 7e4b6d5bedca4e9f42fcaea2d7dbf939141ca7b4[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 14 20:41:09 2026 +0300
+
+    filter
+
+[33mcommit 17a9e0d0f29a21670c233a00b7b9906d4f33b084[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 14 19:29:10 2026 +0300
+
+    ideal
+
+[33mcommit 017390636e1df30f3ca8458e26eca041a47c7dba[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 14 17:52:15 2026 +0300
+
+    deleted
+
+[33mcommit 2b4a8192f8aa69ca1addfe3426371a7408a41d45[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 14 12:37:15 2026 +0300
+
+    new
+
+[33mcommit c3c651ec1c2891b0d18abd70b4bfc53b7eb2d384[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Mon Apr 13 19:34:35 2026 +0300
+
+    apiview
+
+[33mcommit f405e2c0ca2350d020b6e839ce486914faaae437[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Mon Apr 13 18:55:33 2026 +0300
+
+    k
+
+[33mcommit bebbd7f669b88ec9c8bff80fc50e447e67c3488c[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Mon Apr 13 13:53:47 2026 +0300
+
+    serializer
+
+[33mcommit 5727d735e9226d8879cb185e210ad714fed53466[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sun Apr 12 00:01:45 2026 +0300
+
+    rh
+
+[33mcommit f95c5e52da63438c0bd0f46d73ca4978584aea7c[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sat Apr 11 22:39:39 2026 +0300
+
+    first serializers
+
+[33mcommit 857a6dac397f785b73f7e1d12cdfe44c250ce8de[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Wed Apr 8 19:19:30 2026 +0300
+
+    road to drf
+
+[33mcommit 4434af7d5414ad810d89740cbacbc57fa7827db4[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 7 20:29:23 2026 +0300
+
+    put method
+
+[33mcommit 5c5f0cfe562883aede7f39c3ff9abe8f962ed687[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 7 18:01:37 2026 +0300
+
+    delete
+
+[33mcommit 8c36ae643ae7bccd07b09139b21793349427984e[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Tue Apr 7 13:06:45 2026 +0300
+
+    new view
+
+[33mcommit 6101cdd4b0b23560180f10414c4cd3786ca72d88[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Sun Apr 5 20:10:32 2026 +0300
+
+    made views
+
+[33mcommit ed2834ad2e48343b0e465e548b52fe6e72f206fc[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Sun Apr 5 19:24:14 2026 +0300
+
+    postrequest
+
+[33mcommit ce6fcf92b06231e2b9302e22d7d2ec45e0e709ad[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sat Apr 4 18:19:36 2026 +0300
+
+    made urls
+
+[33mcommit 086f99627cd405b0cd3b45b2c13360de6c8c5325[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sat Apr 4 17:16:50 2026 +0300
+
+    stick
+
+[33mcommit 5c2e96d8e004a47af0a6c7c9c086be285d3da227[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Thu Apr 2 20:48:02 2026 +0300
+
+    fix email
+
+[33mcommit b109e9c6c05bfe03f2aba81470cdd59ae3faa4ee[m
+Author: autograph <ldragon837@gmail.com>
+Date:   Thu Apr 2 20:45:53 2026 +0300
+
+    fix email
+
+[33mcommit 745da084e8849d1e9c4db1910f18a4f76c3602e2[m
+Author: autograph <ldargon837@gmail.com>
+Date:   Thu Apr 2 20:40:47 2026 +0300
+
+    start urls
+
+[33mcommit 9037f37c4c42d6db4e5ff5167038d7b89a39e759[m
+Author: autograph <ldargon837@gmail.com>
+Date:   Thu Apr 2 20:05:45 2026 +0300
+
+    test
+
+[33mcommit 50e058e19936752e8fdf2cc47e9231430d17ea9f[m
+Author: autograph <ldargon837@gmail.com>
+Date:   Thu Apr 2 20:01:02 2026 +0300
+
+    test
+
+[33mcommit 3359846a7c6f9738cff176fe2b658ef12f67effa[m
+Author: autograph <ldragon837@email.com>
+Date:   Thu Apr 2 18:56:21 2026 +0300
+
+    made views
+
+[33mcommit 99d24d7ab928d273cab1b79393de60f31b286ae9[m
+Author: autograph <ldragon837@email.com>
+Date:   Wed Apr 1 20:05:24 2026 +0300
+
+    start views
+
+[33mcommit 4cb037182d879d1fbdb18f1633f269228c18e280[m
+Author: autograph <ldragon837@email.com>
+Date:   Tue Mar 31 18:50:03 2026 +0300
+
+    made models
+
+[33mcommit 08d60d87ccba6c48375fbd61cb8df8362016759c[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Mon Mar 30 19:25:16 2026 +0300
+
+    makin model
+
+[33mcommit 12a3c59a76fc0462ed43a7f338b0fbe485c4d1dd[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Mon Mar 30 09:05:30 2026 +0300
+
+    add api app
+
+[33mcommit cd004eacd257a89144e246954b96479ccffff3ea[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sun Mar 29 23:08:39 2026 +0300
+
+    remove .idea from repo
+
+[33mcommit de171908dfa90ff0e28b8e6867aba2f5dcf7aa38[m
+Author: autograph1 <ldragon837@gmail.com>
+Date:   Sun Mar 29 23:05:39 2026 +0300
+
+    update gitignore
+
+[33mcommit b7e9ca45c894c62f460e17ddd69f7a54f18af906[m
+Author: autograph <ldragon837@email.com>
+Date:   Fri Mar 27 11:23:22 2026 +0300
+
+    init project
