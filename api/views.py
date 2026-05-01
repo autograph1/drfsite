@@ -8,6 +8,7 @@ from rest_framework.filters import SearchFilter, OrderingFilter
 
 class TaskListView(ListCreateAPIView):
     permission_classes = [IsAuthenticated]
+    ordering = ['-created_at']
     serializer_class = TaskSerializer
     def get_queryset(self):
         return Task.objects.filter(owner=self.request.user)
